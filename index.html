@@ -10,7 +10,11 @@
    <script src="ex6-2.js"></script>
    <script src="ex6-5.js"></script> 
    <script src="ex6-7.js"></script>
+   <script src="ex6-8.js"></script>
+   <script src="ex6-9.js"></script>
    <script src="ex6-10.js"></script>
+   <script src="ex6-11.js"></script>
+   <link rel="stylesheet" href="imagechange.css"> <!--この行を追加-->
 </head>
 <body>
 
@@ -109,11 +113,38 @@
 <input type="button" value="シンジ" onclick="someone('シンジ');">
 <input type="button" value="アスカ" onclick="someone('アスカ');">
 <br>
-<h1>練習問題6.10</h1>
-<h1>JavaScriptにいよるページの変更</h1>
-<div id="image1">
-  <input type="button" value="画像の変更" onclick="imgchange1();">
-  <img src='./image/Sakado_campus1.jpg'Id= "logo" alt="josailogo">
+<h1>練習問題６．８</h1>
+<h1>>JavaScriptによる変更の練習</h1>
+<input type="button" value="あいさつ" onclick="sayhello68();">
+<input type="button" value="太郎" onclick="taro68();">
+<input type="button" value="花子" onclick="hanako68();">
+<p id="who68">world</p>
+
+<h1>練習問題６．９</h1>
+<h1>JavaScriptによるページの変更6-9</h1>
+<div id="txt1" ><input type="button" value="テキストの変更"
+     onclick="txtchange1();"
+     城西大学</div>
+
+<h1>練習問題６．１０</h1>
+<div id="image" >
+    <input type="button" value="画像の変更" onclick="imgchange1();">
+    <img src='./image/keiei_small.jpg' id="logo" alt="JosaiLogo" class="imagechange">
+
+<div id="image" >
+    <input type="button" value="元に戻す" onclick="imgchange2();">
+
+<h1>タイマーイベントによる実行練習問題６．１１</h1>
+<form name="timer"> 
+    <input type="button" value="スタート" onclick="startfnc()">
+    <br>
+    <input type="text" name="moji" size="30" value=""> </form>
+
+    <form> 
+    <input type="button" value="Timer" onclick="setTimeout('mes()',3000)"> 
+    </form>
+    
+</div>
 </div>
 
 
